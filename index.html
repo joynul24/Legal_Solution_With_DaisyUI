@@ -11,12 +11,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font poppins and EB Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+        <style>
+            .Garamond-font{
+                font-family: "EB Garamond",serif;
+            }
+            .poppins-font{
+                font-family: "Poppins", sans-serif;
+            }
+        </style>
 </head>
 
-<body>
-    <header class="container mx-auto">
+<body class="">
+    <header class="mt-12 container mx-auto">
         <!-- navbar section -->
-        <nav>
+        <nav class="poppins-font">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -54,6 +68,16 @@
             </div>
         </nav>
         <!-- banner section -->
+        <div class="flex mt-16 h-[550px] bg-[url(../images/banner.png)] bg-[] bg-no-repeat w-full bg-center bg-cover object-cover">
+          <div class="p-8 lg:p-0 space-y-8 mt-24 max-w-2xl mx-auto text-center text-white Garamond-font">
+            <h2 class="text-5xl lg:text-7xl font-extrabold">We Provide Effective Legal Solutions</h2>
+            <p class="poppins-font">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="flex-1 lg:flex lg:gap-6">
+                <input type="text" placeholder="Search your services" class="input text-black input-bordered w-[400px] lg:w-[500px] " />
+                <button class="mt-4 lg:mt-0 rounded-md px-10 py-2 text-xl font-semibold bg-[#B68C5A]">Search</button>
+            </div>
+          </div>
+        </div>
     </header>
     <main>
 
